@@ -6,158 +6,106 @@
   <title>Ankita Sharma</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <nav>
-        <a href="index.html" class="nav-brand">
-          <div class="avatar-badge">AS</div>
-          <span class="nav-logo">Ankita Sharma</span>
-        </a>
-        <div class="nav-links">
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="blog.html">Blogs</a>
-        </div>
-      </nav>
-    </header>
+  <div class="canvas">
+    <nav>
+      <a href="index.html" class="brand">Ankita Sharma</a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="resume.html">Resume</a>
+      </div>
+    </nav>
 
     <main>
-      <!-- Hero Section -->
+      <!-- Hero -->
       <section class="hero">
-        <div class="status-pill">
-          <span class="pulse-dot"></span>
-          Building Dino Buddy & Software Engineering Newbies
-        </div>
-        <h1>
-          Building resilient systems.<br>
-          <span class="gradient-text">Empowering the next generation of builders.</span>
-        </h1>
-        <p class="hero-lead">
-          I am a software engineering student and aspiring cloud engineer focused on scalable infrastructure, accessible software, and dismantling the gatekeeping in tech.
+        <span class="hero-tag">Software Engineering &bull; Cloud</span>
+        <h1>Building distributed systems and opening the door for the next generation of engineers.</h1>
+        <p>
+          I am a software engineering student based in Ontario, Canada, focused on cloud architecture, workflow automation, and developer platforms. I build tools like <strong>Dino Buddy</strong> and run <strong>Software Engineering Newbies</strong> to replace industry gatekeeping with clear, actionable technical blueprints.
         </p>
-
-        <div class="hero-stats">
-          <div class="stat-item">
-            <div class="stat-num">21+</div>
-            <div class="stat-label">Editorial Roadmaps</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-num">0%</div>
-            <div class="stat-label">Gatekeeping / Ego</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-num">Cloud & Web</div>
-            <div class="stat-label">Core Architecture</div>
-          </div>
-        </div>
       </section>
 
-      <!-- Featured Projects Grid -->
-      <section class="home-section">
-        <div class="section-header">
-          <h2>Featured Initiatives</h2>
-          <a href="projects.html" class="view-all">View all projects &rarr;</a>
+      <!-- Featured Projects -->
+      <section class="section-block">
+        <div class="section-label">
+          <span>Selected Work</span>
+          <a href="projects.html">All projects &rarr;</a>
         </div>
-        <div class="project-grid">
-          <!-- Project 1 -->
-          <div class="card">
-            <div class="card-top">
-              <span class="card-badge">Productivity App</span>
-              <h3>Dino Buddy</h3>
-              <p>A gamified task planner and focus companion engineered to help students conquer academic overwhelm with dual study blocks.</p>
-              <div class="tag-cloud">
-                <span class="tag">JavaScript</span>
-                <span class="tag">CSS Flexbox</span>
-                <span class="tag">GitHub Pages</span>
-                <span class="tag">Cloudflare</span>
-              </div>
-            </div>
-            <div class="card-links">
-              <a href="https://dinobuddy.dev" target="_blank" rel="noopener">Live Demo &rarr;</a>
-              <a href="https://github.com/ankitasharma" target="_blank" rel="noopener">Source &rarr;</a>
+
+        <div class="project-entry">
+          <div class="project-header">
+            <span class="project-title">Dino Buddy</span>
+            <span class="project-meta">Production App</span>
+          </div>
+          <p class="project-desc">
+            A gamified task planner and focus system engineered to reduce academic cognitive load through structured work intervals and persistent local state.
+          </p>
+          <div class="project-footer">
+            <span class="tech-stack">JavaScript &bull; CSS Flexbox &bull; Cloudflare</span>
+            <div class="project-actions">
+              <a href="https://dinobuddy.dev" target="_blank" rel="noopener">Live System &rarr;</a>
+              <a href="https://github.com/sharmaankita3387" target="_blank" rel="noopener">Source Code &rarr;</a>
             </div>
           </div>
+        </div>
 
-          <!-- Project 2 -->
-          <div class="card">
-            <div class="card-top">
-              <span class="card-badge">Open Community</span>
-              <h3>Software Engineering Newbies</h3>
-              <p>The zero-ego knowledge base and editorial resource guiding early-stage engineers from first code to internship offers.</p>
-              <div class="tag-cloud">
-                <span class="tag">Curriculum</span>
-                <span class="tag">Cloud Pathways</span>
-                <span class="tag">Interview Prep</span>
-              </div>
-            </div>
-            <div class="card-links">
+        <div class="project-entry">
+          <div class="project-header">
+            <span class="project-title">Software Engineering Newbies</span>
+            <span class="project-meta">Open Resource</span>
+          </div>
+          <p class="project-desc">
+            A zero-ego educational ecosystem providing transparent roadmaps on technical interviews, data structures, and cloud engineering pathways for early-career developers.
+          </p>
+          <div class="project-footer">
+            <span class="tech-stack">Technical Writing &bull; Systems Roadmaps</span>
+            <div class="project-actions">
               <a href="blog.html">Read Library &rarr;</a>
-              <a href="https://youtube.com/@softwareengineeringnewbies" target="_blank" rel="noopener">YouTube &rarr;</a>
+              <a href="https://youtube.com/@softengnewbies" target="_blank" rel="noopener">YouTube &rarr;</a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Featured Articles Feed -->
-      <section class="home-section">
-        <div class="section-header">
-          <h2>Latest Guides & Insights</h2>
-          <a href="blog.html" class="view-all">All articles &rarr;</a>
+      <!-- Featured Writing -->
+      <section class="section-block">
+        <div class="section-label">
+          <span>Writing & Guides</span>
+          <a href="blog.html">All articles &rarr;</a>
         </div>
-        <div class="article-feed">
+
+        <div class="article-list">
           <a href="blogs/internship-survival-checklist.html" class="article-row">
-            <div>
-              <div class="row-title">Starting Engineering This Fall? Here's Your Internship Survival Checklist</div>
-              <div class="row-desc">A no-fluff, tactical blueprint for dominating the early recruiting cycle.</div>
-            </div>
-            <div class="row-meta">
-              <span>Aug 8, 2026</span>
-              <span>&rarr;</span>
-            </div>
+            <span class="article-title">Starting Engineering This Fall? Here's Your Internship Survival Checklist</span>
+            <span class="article-date">Aug 8, 2026</span>
           </a>
 
           <a href="blogs/what-actually-happens-in-a-swe-interview.html" class="article-row">
-            <div>
-              <div class="row-title">What Actually Happens In A Software Engineering Interview?</div>
-              <div class="row-desc">Demystifying each stage of the technical hiring loop from recruiter calls to system rounds.</div>
-            </div>
-            <div class="row-meta">
-              <span>Aug 15, 2026</span>
-              <span>&rarr;</span>
-            </div>
+            <span class="article-title">What Actually Happens In A Software Engineering Interview?</span>
+            <span class="article-date">Aug 15, 2026</span>
           </a>
 
           <a href="blogs/how-to-pass-oas.html" class="article-row">
-            <div>
-              <div class="row-title">How To Pass OAs (Online Assessments)</div>
-              <div class="row-desc">Strategies for cracking automated screening challenges without burning out.</div>
-            </div>
-            <div class="row-meta">
-              <span>Aug 22, 2026</span>
-              <span>&rarr;</span>
-            </div>
+            <span class="article-title">How To Pass OAs (Online Assessments)</span>
+            <span class="article-date">Aug 22, 2026</span>
           </a>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="footer-inner">
-        <div class="footer-quote-box">
-          <div class="brand-title">Ankita Sharma</div>
-          <div class="brand-sub">Software Engineering &bull; Cloud Systems</div>
-          <div class="manifesto">"No gatekeeping. No ego. Just builders helping builders."</div>
-        </div>
-        <div class="footer-socials">
-          <a href="https://github.com/sharmankita3387" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://linkedin.com/in/sharmaankita3387" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://instagram.com/softengnewbies" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://youtube.com/@softengnewbies" target="_blank" rel="noopener">YouTube</a>
-        </div>
+      <p class="footer-quote">"No gatekeeping. No ego. Just builders helping builders."</p>
+      <div class="footer-socials">
+        <a href="https://github.com/sharmaankita3387" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/sharmankita3387" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://instagram.com/softengnewbies" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://youtube.com/@softengnewbies" target="_blank" rel="noopener">YouTube</a>
       </div>
     </footer>
   </div>
