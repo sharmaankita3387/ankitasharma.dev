@@ -1,118 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ankita Sharma</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankita Sharma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
+  <div class="container">
     <header>
-        <nav>
-            <a href="index.html" class="nav-logo">Ankita Sharma</a>
-            <div class="nav-links">
-                <a href="about.html">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="blog.html">Blog</a>
-            </div>
-        </nav>
+      <nav>
+        <a href="index.html" class="nav-brand">
+          <div class="avatar-badge">AS</div>
+          <span class="nav-logo">Ankita Sharma</span>
+        </a>
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="blog.html">Blogs</a>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- Hero Section-->
-        <section class="hero">
-            <h1>Ankita Sharma</h1>
-            <p class="lead">
-                Software Engineering student interested in cloud systems and accessible tech.
-                Founder of <strong>Software Engineering Newbies</strong> & <strong>Dino Buddy</strong>
-            </p>
-            <p>
-                I write practical guides to help beginners break into tech without the overwhelm, ego, or gatekeeping.
-            </p>
-        </section>
-        
-        <!--Featured Articles-->
-        <section class="home-section">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="status-pill">
+          <span class="pulse-dot"></span>
+          Building Dino Buddy & Software Engineering Newbies
+        </div>
+        <h1>
+          Building resilient systems.<br>
+          <span class="gradient-text">Empowering the next generation of builders.</span>
+        </h1>
+        <p class="hero-lead">
+          I am a software engineering student and aspiring cloud engineer focused on scalable infrastructure, accessible software, and dismantling the gatekeeping in tech.
+        </p>
 
-            <div class="section-header">
-                <h2>Featured Articles</h2>
-                <a href="blog.html" class="view-all">All Articles &rarr;</a>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">21+</div>
+            <div class="stat-label">Editorial Roadmaps</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">0%</div>
+            <div class="stat-label">Gatekeeping / Ego</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">Cloud & Web</div>
+            <div class="stat-label">Core Architecture</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Grid -->
+      <section class="home-section">
+        <div class="section-header">
+          <h2>Featured Initiatives</h2>
+          <a href="projects.html" class="view-all">View all projects &rarr;</a>
+        </div>
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <div class="card">
+            <div class="card-top">
+              <span class="card-badge">Productivity App</span>
+              <h3>Dino Buddy</h3>
+              <p>A gamified task planner and focus companion engineered to help students conquer academic overwhelm with dual study blocks.</p>
+              <div class="tag-cloud">
+                <span class="tag">JavaScript</span>
+                <span class="tag">CSS Flexbox</span>
+                <span class="tag">GitHub Pages</span>
+                <span class="tag">Cloudflare</span>
+              </div>
             </div>
-
-            <ul class="item-last">
-
-                <li>
-                    <a href="blog/internship-survival-checklist.html" class="item-row">
-                        <div>
-                            <div class="item-title">Starting Engineering This Fall? Here's Your Internship Survival Checklist</div>
-                            <div class="item-desc">A no-fluff checklist to help you hit the ground running with fall recruiting.</div>
-                        </div>
-                        <span class="item-meta">Aug 8, 2026</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="blog/what-actually-happens-in-a-swe-interview.html" class="item-row">
-                        <div>
-                            <div class="item-title">What Actually Happens in a Software Engineering Interview</div>
-                            <div class="item-desc">A breakdown of rounds, expectations, and how to prepare without burning out.</div>
-                        </div>
-                        <span class="item-meta">Aug 15, 2026</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="blog/how-to-pass-oas.html" class="item-row">
-                        <div>
-                            <div class="item-title">How To Pass OAs (Online Assessments)</div>
-                            <div class="item-desc">Proven strategies to tackle timed technical screening assessments with confidence.</div>
-                        </div>
-                        <span class="item-meta">Aug 22, 2026</span>
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-        <!--Featured Projects-->
-        <section class="home-section">
-            <div class="section-header">
-                <h2>Projects</h2>
-                <a href="projects.html" class="view-all">All Projects &rarr;</a>
+            <div class="card-links">
+              <a href="https://dinobuddy.dev" target="_blank" rel="noopener">Live Demo &rarr;</a>
+              <a href="https://github.com/ankitasharma" target="_blank" rel="noopener">Source &rarr;</a>
             </div>
+          </div>
 
-            <ul class="item-list">
-                <li>
-                    <a href="projects.html#dino-buddy" class="item-row">
-                        <div>
-                            <div class="item-title">Dino Buddy</div>
-                            <div class="item-desc">A gamified productivity companion for students.</div>
-                        </div>
-                        <span class="item-meta">Live Demo</span>
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="projects.html#se-newbies" class="item-row">
-                        <div>
-                            <div class="item-title">Software Engineering Newbies</div>
-                            <div class="item-desc">Zero-gatekeeping resources and roadmaps for early-stage engineers.</div>
-                        </div>
-                        <span class="item-meta">Resource Hub &rarr;</span>
-                    </a>
-                </li>
-            </ul>
-        </section>
+          <!-- Project 2 -->
+          <div class="card">
+            <div class="card-top">
+              <span class="card-badge">Open Community</span>
+              <h3>Software Engineering Newbies</h3>
+              <p>The zero-ego knowledge base and editorial resource guiding early-stage engineers from first code to internship offers.</p>
+              <div class="tag-cloud">
+                <span class="tag">Curriculum</span>
+                <span class="tag">Cloud Pathways</span>
+                <span class="tag">Interview Prep</span>
+              </div>
+            </div>
+            <div class="card-links">
+              <a href="blog.html">Read Library &rarr;</a>
+              <a href="https://youtube.com/@softwareengineeringnewbies" target="_blank" rel="noopener">YouTube &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Articles Feed -->
+      <section class="home-section">
+        <div class="section-header">
+          <h2>Latest Guides & Insights</h2>
+          <a href="blog.html" class="view-all">All articles &rarr;</a>
+        </div>
+        <div class="article-feed">
+          <a href="blogs/internship-survival-checklist.html" class="article-row">
+            <div>
+              <div class="row-title">Starting Engineering This Fall? Here's Your Internship Survival Checklist</div>
+              <div class="row-desc">A no-fluff, tactical blueprint for dominating the early recruiting cycle.</div>
+            </div>
+            <div class="row-meta">
+              <span>Aug 8, 2026</span>
+              <span>&rarr;</span>
+            </div>
+          </a>
+
+          <a href="blogs/what-actually-happens-in-a-swe-interview.html" class="article-row">
+            <div>
+              <div class="row-title">What Actually Happens In A Software Engineering Interview?</div>
+              <div class="row-desc">Demystifying each stage of the technical hiring loop from recruiter calls to system rounds.</div>
+            </div>
+            <div class="row-meta">
+              <span>Aug 15, 2026</span>
+              <span>&rarr;</span>
+            </div>
+          </a>
+
+          <a href="blogs/how-to-pass-oas.html" class="article-row">
+            <div>
+              <div class="row-title">How To Pass OAs (Online Assessments)</div>
+              <div class="row-desc">Strategies for cracking automated screening challenges without burning out.</div>
+            </div>
+            <div class="row-meta">
+              <span>Aug 22, 2026</span>
+              <span>&rarr;</span>
+            </div>
+          </a>
+        </div>
+      </section>
     </main>
 
-    <footer class="signature-end">
-        <p class="author">Ankita Sharma</p>
-        <p class="brand">Software Engineering Newbies</p>
-        <p class="quote">"No gatekeeping. No ego. Just builders helping builders."</p>
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-quote-box">
+          <div class="brand-title">Ankita Sharma</div>
+          <div class="brand-sub">Software Engineering &bull; Cloud Systems</div>
+          <div class="manifesto">"No gatekeeping. No ego. Just builders helping builders."</div>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/sharmankita3387" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/sharmaankita3387" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://instagram.com/softengnewbies" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://youtube.com/@softengnewbies" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
     </footer>
-    </div>
+  </div>
 </body>
 </html>
