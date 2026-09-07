@@ -3,340 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blogs</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Blogs | Ankita Sharma</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/png" href="assets/elements/favicon.png" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <nav>
-        <a href="index.html" class="nav-brand">
-          <div class="avatar-badge">AS</div>
-          <span class="nav-logo">Ankita Sharma</span>
-        </a>
-        <div class="nav-links">
-          <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
-          <a href="blog.html" class="active">Blogs</a>
-          <a href="resume.html">Resume</a>
-        </div>
-      </nav>
+  
+  <header class="site-header subpage-header">
+    <div class="site-nav">
+      <a href="index.html" class="nav-brand">Ankita Sharma</a>
+      <ul class="nav-links">
+        <li><a href="blog.html" class="nav-link active">Blogs</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="https://sharmaankita3387.github.io/cloud-resume/" class="nav-link">Resume</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!--Hero Section-->
+    <header class="page-header">
+      <h1 class="page-title-main">Blogs</h1>
+      <p class="page-lead-copy">Whether you’re writing your first lines of code, wondering how AI actually changes the engineering landscape, or hitting a wall in your prep, you shouldn’t have to figure it out alone. Explore actionable articles designed to give you clarity on exactly what to build, learn, and focus on next.</p>
+      <div class="author-signature">&mdash; Ankita, your elder sister in tech</div>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="status-pill">
-          <span class="pulse-dot"></span>
-          Weekly Release Cadence
-        </div>
-        <h1>
-          Articles & Blueprints.<br>
-          <span class="gradient-text">Zero gatekeeping. Practical insight.</span>
-        </h1>
-        <p class="hero-lead">
-          In-depth breakdowns on technical interviews, data structures, cloud infrastructure, and navigating early-career software engineering.
-        </p>
-      </section>
+    <!--Blog Cards-->
+    <section class="blogs-deck">
+      
+      <a href="blogs/blog-internship-checklist.html" class="blog-row-item status-active">
+        <span>Starting Engineering This Fall? Here's Your Internship Survival Checklist</span>
+        <span class="blog-date-status">Aug 8, 2026</span>
+      </a>
 
-      <section class="home-section">
-        <div class="article-feed" id="articles-list">
-          <!-- 1. Aug 8, 2026 -->
-          <a href="blogs/internship-survival-checklist.html" class="article-row" data-publish-date="2026-08-08">
-            <div>
-              <div class="row-title">Starting Engineering This Fall? Here's Your Internship Survival Checklist</div>
-              <div class="row-desc">A tactical blueprint to hit the ground running with fall recruiting and applications.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Aug 8, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
+      <a href="blogs/blog-software-eng-interview.html" class="blog-row-item status-active">
+        <span>What Actually Happens In A Software Engineering Interview?</span>
+        <span class="blog-date-status">Aug 15, 2026</span>
+      </a>
 
-          <!-- 2. Aug 15, 2026 -->
-          <a href="blogs/what-actually-happens-in-a-swe-interview.html" class="article-row" data-publish-date="2026-08-15">
-            <div>
-              <div class="row-title">What Actually Happens In A Software Engineering Interview?</div>
-              <div class="row-desc">Demystifying each stage of the technical hiring loop.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Aug 15, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
+      <a href="blogs/blog-pass-oa.html" class="blog-row-item status-active">
+        <span>How To Pass OAs (Online Assessments)</span>
+        <span class="blog-date-status">Aug 22, 2026</span>
+      </a>
 
-          <!-- 3. Aug 22, 2026 -->
-          <a href="blogs/how-to-pass-oas.html" class="article-row" data-publish-date="2026-08-22">
-            <div>
-              <div class="row-title">How To Pass OAs (Online Assessments)</div>
-              <div class="row-desc">Strategies for cracking automated screening challenges and timed tests.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Aug 22, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
+      <a href="blogs/blog-tech-interview-tips.html" class="blog-row-item status-active">
+        <span>Technical Interview Tips</span>
+        <span class="blog-date-status">Aug 29, 2026</span>
+      </a>
 
-          <!-- 4. Aug 29, 2026 -->
-          <a href="blogs/technical-interview-tips.html" class="article-row" data-publish-date="2026-08-29">
-            <div>
-              <div class="row-title">Technical Interview Tips</div>
-              <div class="row-desc">How to communicate your thought process and problem-solve live with interviewers.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Aug 29, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
+      <a href="blogs/blog-behavioural-interview-guide.html" class="blog-row-item status-active">
+        <span>Behavioural Interview Guide</span>
+        <span class="blog-date-status">Sep 5, 2026</span>
+      </a>
 
-          <!-- 5. Sep 5, 2026 -->
-          <a href="blogs/behavioural-interview-guide.html" class="article-row" data-publish-date="2026-09-05">
-            <div>
-              <div class="row-title">Behavioural Interview Guide</div>
-              <div class="row-desc">Structuring your answers using the STAR method without sounding scripted.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Sep 5, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 6. Sep 12, 2026 -->
-          <a href="blogs/first-year-retrospective.html" class="article-row" data-publish-date="2026-09-12">
-            <div>
-              <div class="row-title">How I'd Spend My First Year If I Could Do It Again</div>
-              <div class="row-desc">Hard-earned lessons on prioritizing side projects, GPA, and networking early.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Sep 12, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 7. Sep 19, 2026 -->
-          <a href="blogs/why-engineering-students-should-join-clubs.html" class="article-row" data-publish-date="2026-09-19">
-            <div>
-              <div class="row-title">Why Engineering Students Should Join Clubs</div>
-              <div class="row-desc">How student teams and developer communities accelerate technical growth.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Sep 19, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 8. Sep 26, 2026 -->
-          <a href="blogs/stop-learning-start-building.html" class="article-row" data-publish-date="2026-09-26">
-            <div>
-              <div class="row-title">Stop Learning. Start Building.</div>
-              <div class="row-desc">Breaking out of tutorial hell by building real-world software from day one.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Sep 26, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 9. Oct 3, 2026 -->
-          <a href="blogs/what-is-dsa.html" class="article-row" data-publish-date="2026-10-03">
-            <div>
-              <div class="row-title">What Is DSA?</div>
-              <div class="row-desc">A plain-English introduction to Data Structures and Algorithms.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Oct 3, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 10. Oct 10, 2026 -->
-          <a href="blogs/dsa-roadmap-for-beginners.html" class="article-row" data-publish-date="2026-10-10">
-            <div>
-              <div class="row-title">DSA Roadmap For Beginners</div>
-              <div class="row-desc">The core patterns and topic progression you actually need for interviews.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Oct 10, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 11. Oct 17, 2026 -->
-          <a href="blogs/best-free-dsa-resources.html" class="article-row" data-publish-date="2026-10-17">
-            <div>
-              <div class="row-title">Best Free DSA Resources</div>
-              <div class="row-desc">High-quality visualizers, practice platforms, and completely free guides.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Oct 17, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 12. Oct 24, 2026 -->
-          <a href="blogs/swe-is-bigger-than-coding.html" class="article-row" data-publish-date="2026-10-24">
-            <div>
-              <div class="row-title">Software Engineering Is Bigger Than Coding</div>
-              <div class="row-desc">Why system architecture, debugging, documentation, and communication matter.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Oct 24, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 13. Oct 31, 2026 -->
-          <a href="blogs/which-tech-path-is-right-for-you.html" class="article-row" data-publish-date="2026-10-31">
-            <div>
-              <div class="row-title">Which Tech Path Is Right For You?</div>
-              <div class="row-desc">Comparing Frontend, Backend, Cloud/DevOps, and Mobile engineering paths.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Oct 31, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 14. Nov 7, 2026 -->
-          <a href="blogs/programming-languages-beginners-should-learn.html" class="article-row" data-publish-date="2026-11-07">
-            <div>
-              <div class="row-title">Programming Languages Beginners Should Learn</div>
-              <div class="row-desc">How to pick your first primary language based on your career trajectory.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Nov 7, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 15. Nov 14, 2026 -->
-          <a href="blogs/learn-to-code-for-free.html" class="article-row" data-publish-date="2026-11-14">
-            <div>
-              <div class="row-title">Learn To Code For Free</div>
-              <div class="row-desc">Curated zero-cost pathways to build technical competency from scratch.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Nov 14, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 16. Nov 21, 2026 -->
-          <a href="blogs/freecodecamp-html-css-course-review.html" class="article-row" data-publish-date="2026-11-21">
-            <div>
-              <div class="row-title">FreeCodeCamp HTML/CSS Course Review</div>
-              <div class="row-desc">An honest breakdown of the FCC curriculum and how to make the most of it.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Nov 21, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 17. Nov 28, 2026 -->
-          <a href="blogs/the-real-power-move-after-finishing-a-course.html" class="article-row" data-publish-date="2026-11-28">
-            <div>
-              <div class="row-title">The Real Power Move After Finishing A Course</div>
-              <div class="row-desc">What to do immediately after getting a certificate so the knowledge sticks.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Nov 28, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 18. Dec 5, 2026 -->
-          <a href="blogs/what-failing-interviews-taught-me.html" class="article-row" data-publish-date="2026-12-05">
-            <div>
-              <div class="row-title">What Failing Interviews Taught Me</div>
-              <div class="row-desc">Reframing technical rejections into actionable growth and iteration loops.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Dec 5, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 19. Dec 12, 2026 -->
-          <a href="blogs/why-i-started-software-engineering-newbies.html" class="article-row" data-publish-date="2026-12-12">
-            <div>
-              <div class="row-title">Why I Started Software Engineering Newbies</div>
-              <div class="row-desc">The motivation behind creating a zero-gatekeeping community.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Dec 12, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 20. Dec 19, 2026 -->
-          <a href="blogs/what-is-software-engineering-newbies.html" class="article-row" data-publish-date="2026-12-19">
-            <div>
-              <div class="row-title">What is Software Engineering Newbies</div>
-              <div class="row-desc">The mission, roadmap, and open resources for student builders.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Dec 19, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-
-          <!-- 21. Dec 26, 2026 -->
-          <a href="blogs/setting-up-vs-code-as-a-swe.html" class="article-row" data-publish-date="2026-12-26">
-            <div>
-              <div class="row-title">New: Setting up VS Code as a Professional Software Engineer</div>
-              <div class="row-desc">Extensions, keybindings, and configurations to optimize your development flow.</div>
-            </div>
-            <div class="row-meta">
-              <span class="date-text">Dec 26, 2026</span>
-              <span>&rarr;</span>
-            </div>
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-inner">
-        <div class="footer-quote-box">
-          <div class="brand-title">Ankita Sharma</div>
-          <div class="brand-sub">Software Engineering &bull; Cloud Systems &bull; Founder of SE Newbies</div>
-          <div class="manifesto">"No gatekeeping. No ego. Just builders helping builders."</div>
-        </div>
-        <div class="footer-socials">
-            <a href="https://github.com/sharmaankita3387" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://linkedin.com/in/sharmankita3387" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://instagram.com/softengnewbies" target="_blank" rel="noopener">Instagram</a>
-            <a href="https://youtube.com/@softengnewbies" target="_blank" rel="noopener">YouTube</a>
-          </div>
-        </div>
+      <div class="blog-row-item status-locked">
+        <span>How I'd Spend My First Year If I Could Do It Again</span>
+        <span class="blog-date-status">Unlocks Sep 12, 2026</span>
       </div>
-    </footer>
-  </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const now = new Date();
-      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      <div class="blog-row-item status-locked">
+        <span>Why Engineering Students Should Join Clubs</span>
+        <span class="blog-date-status">Unlocks Sep 19, 2026</span>
+      </div>
 
-      document.querySelectorAll("#articles-list .article-row").forEach(article => {
-        const pubDateStr = article.getAttribute("data-publish-date");
-        if (!pubDateStr) return;
+      <div class="blog-row-item status-locked">
+        <span>Stop Learning. Start Building.</span>
+        <span class="blog-date-status">Unlocks Sep 26, 2026</span>
+      </div>
 
-        const [year, month, day] = pubDateStr.split("-").map(Number);
-        const pubDate = new Date(year, month - 1, day);
+      <div class="blog-row-item status-locked">
+        <span>What Is DSA?</span>
+        <span class="blog-date-status">Unlocks Oct 3, 2026</span>
+      </div>
 
-        if (pubDate > today) {
-          article.classList.add("locked");
-          const dateSpan = article.querySelector(".date-text");
-          if (dateSpan) {
-            dateSpan.textContent = "Unlocks " + dateSpan.textContent.trim();
-          }
-        }
-      });
-    });
-  </script>
+      <div class="blog-row-item status-locked">
+        <span>DSA Roadmap For Beginners</span>
+        <span class="blog-date-status">Unlocks Oct 10, 2026</span>
+      </div>
+
+      <div class="blog-row-item status-locked">
+        <span>Best Free DSA Resources</span>
+        <span class="blog-date-status">Unlocks Oct 17, 2026</span>
+      </div>
+
+      <div class="blog-row-item status-locked">
+        <span>Software Engineering Is Bigger Than Coding</span>
+        <span class="blog-date-status">Unlocks Oct 24, 2026</span>
+      </div>
+
+      <div class="blog-row-item status-locked">
+        <span>Which Tech Path Is Right For You?</span>
+        <span class="blog-date-status">Unlocks Oct 31, 2026</span>
+      </div>
+
+      <div class="blog-row-item status-locked">
+        <span>Programming Languages Beginners Should Learn</span>
+        <span class="blog-date-status">Unlocks Nov 7, 2026</span>
+      </div>
+
+      <div class="blog-row-item status-locked">
+        <span>Learn To Code For Free</span>
+        <span class="blog-date-status">Unlocks Nov 14, 2026</span>
+      </div>
+
+      <div class="blog-row-item status-locked">
+        <span>FreeCodeCamp HTML/CSS Course Review</span>
+        <span class="blog-date-status">Unlocks Nov 21, 2026</span>
+      </div>
+
+      <div class="blog-row-item status-locked">
+        <span>The Real Power Move After Finishing A Course</span>
+        <span class="blog-date-status">Unlocks Nov 28, 2026</span>
+      </div>
+
+      <div class="blog-row-item status-locked">
+        <span>What Failing Interviews Taught Me</span>
+        <span class="blog-date-status">Unlocks Dec 5, 2026</span>
+      </div>
+
+      <div class="blog-row-item status-locked">
+        <span>Why I Started Software Engineering Newbies</span>
+        <span class="blog-date-status">Unlocks Dec 12, 2026</span>
+      </div>
+
+      <div class="blog-row-item status-locked">
+        <span>What is Software Engineering Newbies </span>
+        <span class="blog-date-status">Unlocks Dec 19, 2026</span>
+      </div>
+
+      <div class="blog-row-item status-locked">
+        <span> Setting up VS Code as a professional Software Engineer</span>
+        <span class="blog-date-status">Unlocks Dec 26, 2026</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer-subpage">
+    <p>&copy; 2026 Ankita Sharma &bull; Designed with care &amp; built from scratch.</p>
+  </footer>
+  
 </body>
 </html>
