@@ -15,7 +15,7 @@ body {
     background: #ffffff;
     padding: 40px 50px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-top: 5px solid #232f3e; /*AWS Navy Blue Touch*/
+    border-top: 5px solid #1e293b; /* Modern AI Slate/Indigo Touch */
 }
 
 /* Header & Contact Info */
@@ -46,19 +46,30 @@ header h1{
 h2 {
     font-size: 1.3em;
     text-transform: uppercase;
-    color: #232f3e;
+    color: #1e293b;
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
     margin-top: 25px;
     margin-bottom: 15px;
 }
 
-/* Layout for Jobs and Degrees */
+/* Layout for Jobs, Degrees, and Projects */
 .item-header {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
     font-size: 1.05em;
+}
+
+.item-header .date a {
+    font-weight: normal;
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.item-header .date a:hover {
+    text-decoration: underline;
 }
 
 .item-sub-header {
